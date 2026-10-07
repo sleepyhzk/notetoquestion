@@ -1,0 +1,13 @@
+[functions.generate-quiz]
+verify_jwt = true
+
+# Trước đây là false -> ai biết URL cũng gọi được và đốt quota Gemini.
+# Frontend đã gửi sẵn anon key trong header Authorization nên bật true không ảnh hưởng người dùng.
+[functions.chat-ai]
+verify_jwt = true
+
+[functions.translate-quiz]
+verify_jwt = true
+
+[functions.explain-quiz]
+verify_jwt = true
